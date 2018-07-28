@@ -13,6 +13,9 @@
 		94D19042210C2982007C2336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D19040210C2982007C2336 /* Main.storyboard */; };
 		94D19044210C2983007C2336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D19043210C2983007C2336 /* Assets.xcassets */; };
 		94D19047210C2983007C2336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D19045210C2983007C2336 /* LaunchScreen.storyboard */; };
+		94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19050210C3133007C2336 /* HTTPRequestManager.swift */; };
+		94D19053210C3140007C2336 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19052210C3140007C2336 /* HTTPStatusCode.swift */; };
+		94D19055210C3147007C2336 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19054210C3147007C2336 /* ServerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		94D19043210C2983007C2336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D19046210C2983007C2336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D19048210C2983007C2336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D19050210C3133007C2336 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPRequestManager.swift; path = "../../../../Translator(Yandex)/HTTPRequestManager.swift"; sourceTree = "<group>"; };
+		94D19052210C3140007C2336 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = "../../../../Translator(Yandex)/HTTPStatusCode.swift"; sourceTree = "<group>"; };
+		94D19054210C3147007C2336 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServerManager.swift; path = "../../../../Translator(Yandex)/ServerManager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		94D1903B210C2982007C2336 /* JardamBerem */ = {
 			isa = PBXGroup;
 			children = (
+				94D1904E210C3102007C2336 /* Network */,
 				94D1903C210C2982007C2336 /* AppDelegate.swift */,
 				94D1903E210C2982007C2336 /* ViewController.swift */,
 				94D19040210C2982007C2336 /* Main.storyboard */,
@@ -86,6 +93,16 @@
 				94D19048210C2983007C2336 /* Info.plist */,
 			);
 			path = JardamBerem;
+			sourceTree = "<group>";
+		};
+		94D1904E210C3102007C2336 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94D19050210C3133007C2336 /* HTTPRequestManager.swift */,
+				94D19052210C3140007C2336 /* HTTPStatusCode.swift */,
+				94D19054210C3147007C2336 /* ServerManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D19055210C3147007C2336 /* ServerManager.swift in Sources */,
 				94D1903F210C2982007C2336 /* ViewController.swift in Sources */,
 				94D1903D210C2982007C2336 /* AppDelegate.swift in Sources */,
+				94D19053210C3140007C2336 /* HTTPStatusCode.swift in Sources */,
+				94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
