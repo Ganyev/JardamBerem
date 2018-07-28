@@ -41,7 +41,7 @@ class HTTPRequestManager {
                 return
             }
             
-            // print("\(statusCode) - \(apiUrl)")
+             print("\(statusCode) - \(apiUrl)")
             
             switch(statusCode) {
             case HTTPStatusCode.badRequest.statusCode:

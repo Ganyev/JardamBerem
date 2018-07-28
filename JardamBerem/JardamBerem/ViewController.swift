@@ -10,16 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        ServerManager.shared.getCities(completion: printCities, error: printError)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func printCities(cities: [City]) {
+        for i in cities {
+            print(i.city_name ?? "empty")
+        }
     }
-
+    
+    func printError(error: String) {
+        print(error)
+    }
+    
+    
+    
 
 }
 
