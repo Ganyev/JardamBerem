@@ -16,8 +16,8 @@
 		94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19050210C3133007C2336 /* HTTPRequestManager.swift */; };
 		94D19053210C3140007C2336 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19052210C3140007C2336 /* HTTPStatusCode.swift */; };
 		94D19055210C3147007C2336 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19054210C3147007C2336 /* ServerManager.swift */; };
-		94D19058210C327C007C2336 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19057210C327C007C2336 /* Constants.swift */; };
-		94D1905B210C345C007C2336 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1905A210C345C007C2336 /* Cities.swift */; };
+		94D1905D210C39BE007C2336 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1905C210C39BE007C2336 /* Constants.swift */; };
+		94D1905F210C39C8007C2336 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1905E210C39C8007C2336 /* Cities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		94D19043210C2983007C2336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D19046210C2983007C2336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D19048210C2983007C2336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94D19050210C3133007C2336 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPRequestManager.swift; path = "../../../../Translator(Yandex)/HTTPRequestManager.swift"; sourceTree = "<group>"; };
-		94D19052210C3140007C2336 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = "../../../../Translator(Yandex)/HTTPStatusCode.swift"; sourceTree = "<group>"; };
-		94D19054210C3147007C2336 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServerManager.swift; path = "../../../../Translator(Yandex)/ServerManager.swift"; sourceTree = "<group>"; };
-		94D19057210C327C007C2336 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../Translator(Yandex)/Constants.swift"; sourceTree = "<group>"; };
-		94D1905A210C345C007C2336 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cities.swift; path = "../../../../Translator(Yandex)/Cities.swift"; sourceTree = "<group>"; };
+		94D19050210C3133007C2336 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		94D19052210C3140007C2336 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		94D19054210C3147007C2336 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		94D1905C210C39BE007C2336 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Helpers/Constants.swift; sourceTree = SOURCE_ROOT; };
+		94D1905E210C39C8007C2336 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cities.swift; path = Models/Cities.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +108,14 @@
 				94D19052210C3140007C2336 /* HTTPStatusCode.swift */,
 				94D19054210C3147007C2336 /* ServerManager.swift */,
 			);
-			path = Network;
+			name = Network;
+			path = ../Network;
 			sourceTree = "<group>";
 		};
 		94D19056210C326D007C2336 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				94D19057210C327C007C2336 /* Constants.swift */,
+				94D1905C210C39BE007C2336 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -122,7 +123,7 @@
 		94D19059210C340D007C2336 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				94D1905A210C345C007C2336 /* Cities.swift */,
+				94D1905E210C39C8007C2336 /* Cities.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,9 +244,9 @@
 				94D1903F210C2982007C2336 /* ViewController.swift in Sources */,
 				94D1903D210C2982007C2336 /* AppDelegate.swift in Sources */,
 				94D19053210C3140007C2336 /* HTTPStatusCode.swift in Sources */,
-				94D1905B210C345C007C2336 /* Cities.swift in Sources */,
+				94D1905F210C39C8007C2336 /* Cities.swift in Sources */,
 				94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */,
-				94D19058210C327C007C2336 /* Constants.swift in Sources */,
+				94D1905D210C39BE007C2336 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
