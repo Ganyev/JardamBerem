@@ -117,7 +117,8 @@
 			children = (
 				94D1905C210C39BE007C2336 /* Constants.swift */,
 			);
-			path = Helpers;
+			name = Helpers;
+			path = ../Helpers;
 			sourceTree = "<group>";
 		};
 		94D19059210C340D007C2336 /* Models */ = {
@@ -125,7 +126,8 @@
 			children = (
 				94D1905E210C39C8007C2336 /* Cities.swift */,
 			);
-			path = Models;
+			name = Models;
+			path = ../Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
