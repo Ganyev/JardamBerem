@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11689FE1F99556FAD7F8698C /* Pods_JardamBerem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4B7E995A078D01F12DFE8 /* Pods_JardamBerem.framework */; };
+		940C91BF210DC9E20008E6BE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C91BD210DC9E20008E6BE /* MainViewController.swift */; };
+		940C91C0210DC9E20008E6BE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940C91BE210DC9E20008E6BE /* MainViewController.xib */; };
 		94D1903D210C2982007C2336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1903C210C2982007C2336 /* AppDelegate.swift */; };
 		94D1903F210C2982007C2336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1903E210C2982007C2336 /* ViewController.swift */; };
 		94D19042210C2982007C2336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D19040210C2982007C2336 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		13762763B7F438F335C79188 /* Pods-JardamBerem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBerem.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBerem/Pods-JardamBerem.release.xcconfig"; sourceTree = "<group>"; };
 		1FD4B7E995A078D01F12DFE8 /* Pods_JardamBerem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBerem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71913A024E9C81ECB6A6F485 /* Pods-JardamBerem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBerem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBerem/Pods-JardamBerem.debug.xcconfig"; sourceTree = "<group>"; };
+		940C91BD210DC9E20008E6BE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		940C91BE210DC9E20008E6BE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		94D19039210C2982007C2336 /* JardamBerem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBerem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D1903C210C2982007C2336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D1903E210C2982007C2336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		940C91C1210DC9F70008E6BE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				940C91BD210DC9E20008E6BE /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		940C91C2210DCA140008E6BE /* Storyboard's & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				94D19040210C2982007C2336 /* Main.storyboard */,
+				940C91BE210DC9E20008E6BE /* MainViewController.xib */,
+			);
+			path = "Storyboard's & Xibs";
+			sourceTree = "<group>";
+		};
 		94D19030210C2982007C2336 = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +109,13 @@
 		94D1903B210C2982007C2336 /* JardamBerem */ = {
 			isa = PBXGroup;
 			children = (
+				940C91C1210DC9F70008E6BE /* View Controllers */,
+				940C91C2210DCA140008E6BE /* Storyboard's & Xibs */,
 				94D19059210C340D007C2336 /* Models */,
 				94D19056210C326D007C2336 /* Helpers */,
 				94D1904E210C3102007C2336 /* Network */,
 				94D1903C210C2982007C2336 /* AppDelegate.swift */,
 				94D1903E210C2982007C2336 /* ViewController.swift */,
-				94D19040210C2982007C2336 /* Main.storyboard */,
 				94D19043210C2983007C2336 /* Assets.xcassets */,
 				94D19045210C2983007C2336 /* LaunchScreen.storyboard */,
 				94D19048210C2983007C2336 /* Info.plist */,
@@ -193,6 +215,7 @@
 				94D19047210C2983007C2336 /* LaunchScreen.storyboard in Resources */,
 				94D19044210C2983007C2336 /* Assets.xcassets in Resources */,
 				94D19042210C2982007C2336 /* Main.storyboard in Resources */,
+				940C91C0210DC9E20008E6BE /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +272,7 @@
 				94D1905F210C39C8007C2336 /* Cities.swift in Sources */,
 				94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */,
 				94D1905D210C39BE007C2336 /* Constants.swift in Sources */,
+				940C91BF210DC9E20008E6BE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
