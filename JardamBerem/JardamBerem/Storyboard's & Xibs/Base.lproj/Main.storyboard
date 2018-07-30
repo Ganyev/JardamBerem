@@ -36,7 +36,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zdo-YZ-agc">
                                 <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <collectionViewLayout key="collectionViewLayout" id="yYR-u4-XJL" customClass="PinterestLayout" customModule="JardamBerem" customModuleProvider="target"/>
                                 <cells>
@@ -47,7 +47,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="316" height="265"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="duv-vD-Pdv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="duv-vD-Pdv">
                                                     <rect key="frame" x="0.0" y="0.0" width="316" height="230.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdk-os-uAd">
@@ -85,11 +85,21 @@
                                     <outlet property="delegate" destination="KuN-gG-fLq" id="pZn-oj-anq"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-bD-K3a">
+                                <rect key="frame" x="0.0" y="322.5" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cII-MN-t7e"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="LCf-bD-K3a" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="0fX-df-8Tj"/>
+                            <constraint firstItem="zdo-YZ-agc" firstAttribute="top" secondItem="LCf-bD-K3a" secondAttribute="bottom" constant="10" id="7m3-mq-Zkd"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="P8K-Mp-bJY"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="bottom" secondItem="KbH-nz-M3X" secondAttribute="bottom" id="SXp-sT-AgV"/>
+                            <constraint firstItem="LCf-bD-K3a" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="T0j-eZ-2yv"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="height" secondItem="4CU-gt-WsW" secondAttribute="height" multiplier="1:2" id="kQt-zf-wT3"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="qx8-F9-0x9"/>
                         </constraints>
@@ -104,7 +114,4 @@
             <point key="canvasLocation" x="949.60000000000002" y="62.518740629685162"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="header" width="2000" height="1200"/>
-    </resources>
 </document>
