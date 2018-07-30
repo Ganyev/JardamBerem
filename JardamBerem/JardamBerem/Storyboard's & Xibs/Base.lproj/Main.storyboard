@@ -48,10 +48,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="duv-vD-Pdv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="230.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="244"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdk-os-uAd">
-                                                    <rect key="frame" x="0.0" y="230.5" width="316" height="34.5"/>
+                                                    <rect key="frame" x="0.0" y="244" width="316" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -65,7 +65,7 @@
                                             <constraint firstItem="duv-vD-Pdv" firstAttribute="leading" secondItem="nK4-In-HYi" secondAttribute="leading" id="8DK-zX-DKX"/>
                                             <constraint firstItem="duv-vD-Pdv" firstAttribute="top" secondItem="nK4-In-HYi" secondAttribute="top" id="UCx-bj-Qyz"/>
                                             <constraint firstAttribute="trailing" secondItem="Vdk-os-uAd" secondAttribute="trailing" id="WHG-TJ-u0W"/>
-                                            <constraint firstItem="duv-vD-Pdv" firstAttribute="height" secondItem="nK4-In-HYi" secondAttribute="height" multiplier="0.87" id="nff-to-YHu"/>
+                                            <constraint firstItem="duv-vD-Pdv" firstAttribute="height" secondItem="nK4-In-HYi" secondAttribute="height" multiplier="0.92" id="nff-to-YHu"/>
                                             <constraint firstItem="Vdk-os-uAd" firstAttribute="leading" secondItem="nK4-In-HYi" secondAttribute="leading" id="yLU-GB-BK7"/>
                                         </constraints>
                                         <size key="customSize" width="316" height="265"/>
@@ -92,14 +92,23 @@
                                     <constraint firstAttribute="height" constant="1" id="cII-MN-t7e"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33Y-QR-Pn6">
+                                <rect key="frame" x="0.0" y="65" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="SIq-to-YMg"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LCf-bD-K3a" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="0fX-df-8Tj"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="top" secondItem="LCf-bD-K3a" secondAttribute="bottom" constant="10" id="7m3-mq-Zkd"/>
+                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="DFy-Md-bvd"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="P8K-Mp-bJY"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="bottom" secondItem="KbH-nz-M3X" secondAttribute="bottom" id="SXp-sT-AgV"/>
                             <constraint firstItem="LCf-bD-K3a" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="T0j-eZ-2yv"/>
+                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="Txx-Yc-8gk"/>
+                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="top" secondItem="KbH-nz-M3X" secondAttribute="top" constant="45" id="gou-ba-7qC"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="height" secondItem="4CU-gt-WsW" secondAttribute="height" multiplier="1:2" id="kQt-zf-wT3"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="qx8-F9-0x9"/>
                         </constraints>
