@@ -8,6 +8,8 @@
 //
 
 import Foundation
+import Alamofire
+
 class ServerManager: HTTPRequestManager {
     static let shared = ServerManager()
     
