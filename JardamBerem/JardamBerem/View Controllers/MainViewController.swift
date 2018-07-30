@@ -11,7 +11,10 @@ import UIKit
 class MainViewController: UIViewController {
 
     //MARK: Outlets
+
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var categoriesCollectionView: UICollectionView!
+    
     //MARK: Properties
     let images = [#imageLiteral(resourceName: "image0"),#imageLiteral(resourceName: "image1"),#imageLiteral(resourceName: "image2"),#imageLiteral(resourceName: "image3"),#imageLiteral(resourceName: "image4"),#imageLiteral(resourceName: "img1"),#imageLiteral(resourceName: "img2"),#imageLiteral(resourceName: "img4"),#imageLiteral(resourceName: "img5"),#imageLiteral(resourceName: "img6"),#imageLiteral(resourceName: "img7")]
     override func viewDidLoad() {

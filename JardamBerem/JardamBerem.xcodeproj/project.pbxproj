@@ -12,6 +12,7 @@
 		940C91D1210E364B0008E6BE /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C91D0210E364B0008E6BE /* MainCell.swift */; };
 		940C91D3210E3A6C0008E6BE /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C91D2210E3A6C0008E6BE /* PinterestLayout.swift */; };
 		940C91D9210ECBC30008E6BE /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C91D8210ECBC30008E6BE /* Categories.swift */; };
+		940C91DD210EE1EA0008E6BE /* HorizontalCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C91DC210EE1EA0008E6BE /* HorizontalCategoriesCell.swift */; };
 		94D1903D210C2982007C2336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1903C210C2982007C2336 /* AppDelegate.swift */; };
 		94D1903F210C2982007C2336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1903E210C2982007C2336 /* ViewController.swift */; };
 		94D19042210C2982007C2336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D19040210C2982007C2336 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		940C91D0210E364B0008E6BE /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		940C91D2210E3A6C0008E6BE /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		940C91D8210ECBC30008E6BE /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		940C91DC210EE1EA0008E6BE /* HorizontalCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoriesCell.swift; sourceTree = "<group>"; };
 		94D19039210C2982007C2336 /* JardamBerem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBerem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D1903C210C2982007C2336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D1903E210C2982007C2336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				940C91D0210E364B0008E6BE /* MainCell.swift */,
+				940C91DC210EE1EA0008E6BE /* HorizontalCategoriesCell.swift */,
 				940C91D2210E3A6C0008E6BE /* PinterestLayout.swift */,
 			);
 			path = Views;
@@ -287,6 +290,7 @@
 				940C91D9210ECBC30008E6BE /* Categories.swift in Sources */,
 				94D19051210C3133007C2336 /* HTTPRequestManager.swift in Sources */,
 				94D1905D210C39BE007C2336 /* Constants.swift in Sources */,
+				940C91DD210EE1EA0008E6BE /* HorizontalCategoriesCell.swift in Sources */,
 				940C91CB210E314B0008E6BE /* MainViewController.swift in Sources */,
 				940C91D1210E364B0008E6BE /* MainCell.swift in Sources */,
 			);

@@ -92,33 +92,71 @@
                                     <constraint firstAttribute="height" constant="1" id="cII-MN-t7e"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33Y-QR-Pn6">
-                                <rect key="frame" x="0.0" y="65" width="375" height="70"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-ad-EZO">
+                                <rect key="frame" x="0.0" y="70" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="SIq-to-YMg"/>
+                                    <constraint firstAttribute="height" constant="70" id="Gkk-hR-uFP"/>
                                 </constraints>
-                            </scrollView>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B01-iE-sRr">
+                                    <size key="itemSize" width="86" height="64"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="category_cell" id="IBG-Cd-sJG">
+                                        <rect key="frame" x="0.0" y="3" width="86" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="86" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-p5-Ukp">
+                                                    <rect key="frame" x="22" y="22" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="8ci-p5-Ukp" firstAttribute="centerY" secondItem="IBG-Cd-sJG" secondAttribute="centerY" id="tls-37-9pv"/>
+                                            <constraint firstItem="8ci-p5-Ukp" firstAttribute="centerX" secondItem="IBG-Cd-sJG" secondAttribute="centerX" id="utM-mL-RZX"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LCf-bD-K3a" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="0fX-df-8Tj"/>
+                            <constraint firstItem="9N5-ad-EZO" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="3Bf-aO-7s6"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="top" secondItem="LCf-bD-K3a" secondAttribute="bottom" constant="10" id="7m3-mq-Zkd"/>
-                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="DFy-Md-bvd"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="P8K-Mp-bJY"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="bottom" secondItem="KbH-nz-M3X" secondAttribute="bottom" id="SXp-sT-AgV"/>
                             <constraint firstItem="LCf-bD-K3a" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="T0j-eZ-2yv"/>
-                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="Txx-Yc-8gk"/>
-                            <constraint firstItem="33Y-QR-Pn6" firstAttribute="top" secondItem="KbH-nz-M3X" secondAttribute="top" constant="45" id="gou-ba-7qC"/>
+                            <constraint firstItem="9N5-ad-EZO" firstAttribute="top" secondItem="KbH-nz-M3X" secondAttribute="top" constant="50" id="VFD-tp-0ab"/>
+                            <constraint firstItem="9N5-ad-EZO" firstAttribute="trailing" secondItem="KbH-nz-M3X" secondAttribute="trailing" id="eGz-I0-Jhe"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="height" secondItem="4CU-gt-WsW" secondAttribute="height" multiplier="1:2" id="kQt-zf-wT3"/>
                             <constraint firstItem="zdo-YZ-agc" firstAttribute="leading" secondItem="KbH-nz-M3X" secondAttribute="leading" id="qx8-F9-0x9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KbH-nz-M3X"/>
                     </view>
                     <connections>
+                        <outlet property="categoriesCollectionView" destination="9N5-ad-EZO" id="zfX-cp-Zob"/>
                         <outlet property="collectionView" destination="zdo-YZ-agc" id="EdK-YW-9ke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQz-YZ-zoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6O-wC-wRR" customClass="HorizontalScrollerView" customModule="BlueLibrarySwift" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <color key="backgroundColor" red="0.78837685899999999" green="0.78972791379999996" blue="0.81034482760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="ZSA-aX-Y4I"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="jpK-JS-K50"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="949.60000000000002" y="62.518740629685162"/>
         </scene>
